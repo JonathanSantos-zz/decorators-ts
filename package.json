@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start": "lite-server --baseDir=."
+    "start": "tsc && lite-server --baseDir=."
   },
   "author": "jonathan reis dos santos",
   "license": "ISC",
