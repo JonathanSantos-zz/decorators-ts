@@ -308,10 +308,11 @@
         return Promise.resolve(loader.resolve(dep, id))
         .then(function (depId) {
 
-          // FIX - typescript module
+          // FIX - typescript module - added by JONATHANSANTOS
           if (!depId.endsWith('.js') && System.defaultJSExtensions) {
             depId = `${depId}.js`;
           }
+          // FIX - typescript module - added by JONATHANSANTOS
 
           const depLoad = getOrCreateLoad(loader, depId, id);
           // depLoad.I may be undefined for already-evaluated
